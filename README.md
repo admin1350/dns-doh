@@ -92,7 +92,9 @@ sudo apt install certbot -y
 
 Выпусти сертификат для домена:
 ```
+Желательно сначала остановить adguard иначе не заработает systemctl stop AdGuardHome.service 
 sudo certbot certonly --standalone -d doh.yourdomain.com
+после запустить systemctl start AdGuardHome.service 
 ```
 
 
