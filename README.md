@@ -13,6 +13,7 @@ DNS (система доменных имен) нужна для преобра�
 Обновите систему и установите базовые утилиты (поочередно):
 ```
 apt update && apt upgrade -y
+atp install git -y
 ```
 
 
@@ -49,7 +50,8 @@ echo "nameserver 1.1.1.1" | sudo tee /etc/resolv.conf
 Скачайте и распакуйте AdGuard Home (вводим поочередно):
 ```
 cd /opt
-sudo curl -s -L https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz -o adguard.tar.gz
+git clone https://github.com/admin1350/dns-doh.git
+cd dns-doh
 sudo tar -xzf adguard.tar.gz
 cd AdGuardHome
 ```
