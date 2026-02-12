@@ -52,7 +52,7 @@ echo "nameserver 1.1.1.1" | sudo tee /etc/resolv.conf
 cd /opt
 git clone https://github.com/admin1350/dns-doh.git
 cd dns-doh
-sudo tar -xzf adguard.tar.gz
+tar -xzf 'AdGuardHome_linux_amd64(1).tar.gz'
 cd AdGuardHome
 ```
 
@@ -102,7 +102,7 @@ sudo certbot certonly --standalone -d doh.yourdomain.com
 /etc/letsencrypt/live/doh.yourdomain.com/fullchain.pem
 /etc/letsencrypt/live/doh.yourdomain.com/privkey.pem
 
-
+Если днс за натом, то разрешить udp 53 tcp 53 443 853
 
 Сохрани и перейди в Инструкцию по настройке, подключи свое устройство согласно инструкции.
 Про то как фильтровать рекламу и управлять списками, а также настроить DNS конфигурацию смотри в видео.
